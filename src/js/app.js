@@ -46,7 +46,7 @@ buttonEl.onclick = evt => {
     const value = priceEl.value;
     const category = addInputCategoryEl.value;
 
-    
+
 
     totalSum += parseInt(value, 10);
     sumEl.textContent = `${totalSum}`;
@@ -59,8 +59,8 @@ buttonEl.onclick = evt => {
     <button data-action="down">↓</button>
     `;
 
-   
-    
+
+
     purchasesListEl.insertBefore(purchaseEl, purchasesListEl.firstElementChild);
 
     priceEl.value = '';
@@ -72,9 +72,9 @@ buttonEl.onclick = evt => {
 
     addRemoveButtonEl.onclick = () => {
         purchaseEl.remove();
-        totalSum-=value;
+        totalSum -= value;
 
-        sumEl.textContent = `${totalSum}`;  
+        sumEl.textContent = `${totalSum}`;
     }
 
     const addUpButtonEl = purchaseEl.querySelector('[data-action=up]');
