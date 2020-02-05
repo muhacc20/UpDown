@@ -70,7 +70,7 @@ buttonEl.onclick = evt => {
 
     const addRemoveButtonEl = purchaseEl.querySelector('[data-action=remove]');
 
-    addRemoveButtonEl.onclick = () => {
+    addRemoveButtonEl.onclick = () =>  {
         purchaseEl.remove();
         totalSum -= value;
         sumEl.textContent = `${totalSum}`;
